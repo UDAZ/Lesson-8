@@ -107,10 +107,17 @@ rails g devise:controllers users
      ThanksMailer.send_when_user_registration(@user).deliver 
     end
 ```
-#### ③ルーティングの変更
+### ③ルーティングの変更
 routes.rb
 ```
   devise_for :users, controllers: {
   registrations: "users/registrations"
 }
 ```
+
+### ※railsコンソールからメールを送る時
+```
+ThanksMailer.send_when_user_registration(User.find_by(id: 1)).deliver
+```
+でユーザーid1にメールを送ることができます。
+テストの際とか便利です！
