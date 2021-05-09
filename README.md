@@ -100,3 +100,10 @@ end
 ```
 rails g devise:controllers users
 ```
+#### ②registrations_controller.rbのcreateアクションを上書き
+```
+    def create
+     super
+     ThanksMailer.send_when_user_registration(@user).deliver 
+    end
+```
