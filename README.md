@@ -95,3 +95,8 @@ end
 
 今後とも bookers をよろしくお願いいたします。
 ```
+### ⑦deviseコントローラーのオーバーライド
+#### ①deviseコントローラーの作成
+```
+rails g devise:controllers users
+```
