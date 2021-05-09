@@ -107,3 +107,10 @@ rails g devise:controllers users
      ThanksMailer.send_when_user_registration(@user).deliver 
     end
 ```
+#### ③ルーティングの変更
+routes.rb
+```
+  devise_for :users, controllers: {
+  registrations: "users/registrations"
+}
+```
