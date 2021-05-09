@@ -66,9 +66,8 @@ Rails.application.configure do
     :address => 'smtp.gmail.com',
     :port => 587,
     :domain => 'gmail.com',
-    # 以下のuser_name, passwordはご自身のものに変更して下さい。
-    :user_name => ENV['GMAIL'],
-    :password => ENV['GPASS'],
+    :user_name => ENV["GMAIL"],
+    :password => ENV["GPASS"],
     :authentication => :plain,
     :enable_starttls_auto => true
   }
