@@ -65,3 +65,13 @@ class ApplicationMailer < ActionMailer::Base
   layout 'mailer'
 end
 ```
+### ⑤thanks_mailerの編集
+app/mailer/thanks_mailer.rb
+```
+class ThanksMailer < ApplicationMailer
+    def send_when_user_registration(user)
+        @user = user
+        mail to: user.email, subject: '【bookers】ご登録ありがとうございます'
+    end
+end
+```
