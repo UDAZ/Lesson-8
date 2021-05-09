@@ -35,3 +35,7 @@ exit
 ```
 bundle exec spring stop
 ```
+### ②devlopment.rbにメール設定を追記
+config/environments/devlopment.rb
+```
+```
