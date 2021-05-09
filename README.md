@@ -53,3 +53,7 @@ config/environments/development.rb
   }
 
 ```
+### ③メイラーの作成
+```
+rails generate mailer ThanksMailer
+```
