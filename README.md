@@ -31,3 +31,7 @@ rails コンソールの終了
 ```
 exit
 ```
+#### ※railsコンソールが動作しない場合
+```
+bundle exec spring stop
+```
