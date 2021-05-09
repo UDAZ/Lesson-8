@@ -75,3 +75,10 @@ class ThanksMailer < ApplicationMailer
     end
 end
 ```
+### ⑥thanks_mailerのviewを作成
+#### ①send_when_user_registration.html.erbの作成
+```
+```
+#### ②send_when_user_registration.text.erbの作成
+```
+```
