@@ -53,3 +53,15 @@ config/environments/development.rb
   }
 
 ```
+### ③メイラーの作成
+```
+rails generate mailer ThanksMailer
+```
+### ④application_mailerの編集
+app/mailers/application_mailer.rbの編集
+```
+class ApplicationMailer < ActionMailer::Base
+  default from: "管理人 <from@example.com>"
+  layout 'mailer'
+end
+```
